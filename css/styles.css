@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.layout .layout-title {
+    font-family: 'Rubik', sans-serif;
+}
+
+.layout .nav-link {
+    font-family: 'Rubik', sans-serif;
+}
+
+.layout-drawer span.nav-link-group.mdl-navigation__link {
+    color: #2979ff;
+    font-weight: bold;
+}
+
+.card-font {
+    font-family: 'Rubik', sans-serif;
+}
+
+.layout-home .card-text.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-text>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #2979ff;
+}
+
+.layout-home .card-button.mdl-card {
+    width: 712px;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-home .card-button>.mdl-card__title {
+    color: #fff;
+    height: 100px;
+    background-color: #2979ff;
+}
+
+
+.layout-bot .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+}
+
+.layout-bot .card-text>.mdl-card__title {
+    color: #fff;
+    height: max-content;
+    background-color: #2979ff;
+}
