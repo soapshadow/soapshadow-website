@@ -53,3 +53,16 @@
     height: max-content;
     background-color: #2979ff;
 }
+
+@media screen and (max-width: 480px) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+}
