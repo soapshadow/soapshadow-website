@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* All layouts */
 .layout .layout-title {
     font-family: 'Rubik', sans-serif;
 }
@@ -17,6 +18,13 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.card-button-font {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Home layout */
 .layout-home .card-text.mdl-card {
     width: 712px;
     margin: auto;
@@ -41,20 +49,26 @@
     background-color: #2979ff;
 }
 
-
-.layout-bot .card-text.mdl-card {
-    width: auto;
+/* Layout - Call of Duty Wiki Discord bot pages */
+.layout-cod-discord-bot-cmds .card-text.mdl-card {
+    width: 1024px;
     margin: auto;
     height: max-content;
 }
 
-.layout-bot .card-text>.mdl-card__title {
+.layout-cod-discord-bot-cmds .card-text>.mdl-card__title {
     color: #fff;
     height: max-content;
     background-color: #2979ff;
 }
 
-@media screen and (max-width: 480px) {
+.layout-cod-discord-bot-cmds .links {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 425px) {
     .layout-home .card-text.mdl-card {
         width: auto;
         margin: auto;
@@ -65,4 +79,9 @@
         margin: auto;
         height: max-content;
     }
+    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+}
 }
