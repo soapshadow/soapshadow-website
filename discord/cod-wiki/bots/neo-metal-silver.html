@@ -31,22 +31,28 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="nav-link mdl-navigation__link" href="../../cod-wiki">Home</a>
+                    <a class="nav-link mdl-navigation__link" href="https://soapshadow.tk">Home</a>
+                    <a class="nav-link mdl-navigation__link" href="../../cod-wiki">Call of Duty Wiki Discord</a>
+                    <a class="nav-link mdl-navigation__link" href="#">My Little Pony Wiki Discord</a>
                 </nav>
             </div>
             <!-- Tabs -->
-            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <div class="layout mdl-layout__tab-bar mdl-js-ripple-effect">
                 <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Info</a>
                 <a href="#scroll-tab-2" class="mdl-layout__tab">General Cmds</a>
                 <a href="#scroll-tab-3" class="mdl-layout__tab">Mod Cmds</a>
                 <a href="#scroll-tab-4" class="mdl-layout__tab">Log Cmds</a>
                 <a href="#scroll-tab-5" class="mdl-layout__tab">Advanced Cmds</a>
                 <a href="#scroll-tab-6" class="mdl-layout__tab">Backup</a>
+                <a href="#scroll-tab-7" class="mdl-layout__tab" style="visibility: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </div>
         </header>
         <div class="layout-drawer mdl-layout__drawer">
             <span class="mdl-layout-title">Navigation</span>
             <nav class="mdl-navigation">
+                <a class="nav-link mdl-navigation__link" href="https://soapshadow.tk">Home</a>
+                <a class="nav-link mdl-navigation__link" href="../../cod-wiki">Call of Duty Wiki Discord</a>
+                <a class="nav-link mdl-navigation__link" href="#">My Little Pony Wiki Discord</a>
                 <span class="nav-link-group mdl-navigation__link">BOTS</span>
                 <a class="mdl-navigation__link" href="neo-metal-silver">Neo Metal Silver</a>
                 <a class="mdl-navigation__link" href="#">URL</a>
@@ -82,6 +88,43 @@
 
             <section class="mdl-layout__tab-panel" id="scroll-tab-2">
                 <div class="layout-cod-discord-bot-cmds page-content" style="margin: 16px">
+                    <!-- Activity - User, Global -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">activity [user] ([--global])</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets the number of messages sent by a user in the last 30 days, either server only or globally.
+                            <br/><br/>Your activity - ie. !activity
+                            <br/>Another user's activity - ie. !activity @Scootaloo
+                            <br/><br/>Your activity globally - ie. !activity --global
+                            <br/>Another user's activity globally - ie. !activity @Callofduty4 --global
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Change Log -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">changelog</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows the change log of bot updates, sorted from latest to oldest.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Chid -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">chid</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs the channel id where you post this command.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Commands -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -100,8 +143,7 @@
                         </div>
                         <div class="card-font mdl-card__supporting-text">
                             <a class="links" href="https://youtu.be/ab8GtuPdrUQ">https://youtu.be/ab8GtuPdrUQ</a>
-                            <br/><br/>Command restriction:
-                            none.
+                            <br/><br/>Command restriction: none.
                         </div>
                     </div>
                     &nbsp;&nbsp;
@@ -138,6 +180,17 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Help -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">help</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gives a link to the official documentation site of the bot.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Hi -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -160,6 +213,17 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Invite -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">invite</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gives an invite link to add the bot to your own server.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Maths Bot -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -171,6 +235,21 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Most Active -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">mostactive [page number] ([--global])</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets the number of messages sent by the 20 most active users in the server, or gets the top 20 active users globally.
+                            <br/><br/>20 most active in the server - ie. !mostactive
+                            <br/>Next 20 most active in the server, page 2 - ie. !mostactive 2
+                            <br/><br/>20 most active globally - ie. !mostactive --global
+                            <br/>Next 20 most active globally, page 2 - ie. !mostactive 2 --global
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Owner -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -178,6 +257,54 @@
                         </div>
                         <div class="card-font mdl-card__supporting-text">
                             Scoots is my owner. His profile: <a class="links" href="http://callofduty.wikia.com/wiki/User:Crazy_sam10">http://callofduty.wikia.com/wiki/User:Crazy_sam10</a>
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Ping -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">ping</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Wakey wakey.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Poll -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">poll [question]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Creates a yes/no poll.
+                            <br/><br/>ie. !poll Does this work?
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Reddit - Subreddit Name, Sort Option -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">reddit [subreddit name] [sort option]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Gets reddit posts.
+                            <br/><br/>ie. !reddit worldnews rising
+                            <br/><br/>Sort options: comments, controversial, hot, gilded, new, promoted, rising, top.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Roblox - User Info -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">roblox user info [user]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Retrieves info about a user from Roblox.
+                            <br/><br/>ie. !roblox user info soap
                             <br/><br/>Command restriction: none.
                         </div>
                     </div>
@@ -200,6 +327,40 @@
                         </div>
                         <div class="card-font mdl-card__supporting-text">
                             <a class="links" href="https://scootaloo.com/">https://scootaloo.com/</a>
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Self -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">self</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs your user id.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Server ID -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">serverid</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Outputs the server's unique id.
+                            <br/><br/>Command restriction: none.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Stats -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">stats</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Shows info about the bot.
+                            <br/><br/>Other commands which do the same: about, statistics.
                             <br/><br/>Command restriction: none.
                         </div>
                     </div>
@@ -244,6 +405,11 @@
                 </div>
             </section>
             <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+                <div class="page-content">
+
+                </div>
+            </section>
+                        <section class="mdl-layout__tab-panel" id="scroll-tab-7">
                 <div class="page-content">
 
                 </div>

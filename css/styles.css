@@ -67,8 +67,8 @@
     word-wrap: break-word;
 }
 
-/* Mobile devices */
-@media screen and (max-width: 425px) {
+/* Mobile devices - portrait */
+@media screen and (max-width: 425px) and (orientation: portrait) {
     .layout-home .card-text.mdl-card {
         width: auto;
         margin: auto;
@@ -83,5 +83,46 @@
     width: auto;
     margin: auto;
     height: max-content;
+    }
 }
+
+
+/* Mobile devices - landscape */
+@media screen and (min-width: 425px) and (max-width: 768px) and (orientation: landscape) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+    }
+}
+
+/* Tablets
+/* 1024+ = large tablets, laptops and pcs ie. iPad Pro in landscape = 1366px.
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .layout-home .card-text.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-home .card-button.mdl-card {
+        width: auto;
+        margin: auto;
+        height: max-content;
+    }
+    .layout-cod-discord-bot-cmds .card-text.mdl-card {
+    width: auto;
+    margin: auto;
+    height: max-content;
+    }
 }
