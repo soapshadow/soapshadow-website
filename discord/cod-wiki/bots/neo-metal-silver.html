@@ -597,6 +597,20 @@
             <section class="mdl-layout__tab-panel" id="advanced-cmds">
                 <div class="layout-cod-discord-bot-cmds page-content" style="margin: 16px">
 
+                    <!-- Autorole -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">autorole [role(s)]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Automatically set roles when a user joins the server.
+                            <br/><br/>Set the role to unverified and users - ie. !settings autorole unverified users
+                            <br/><b>Note: No separator is used to separate the list of roles.</b>
+                            <br/><br/>Turn off auto role - ie. !settings autorole off.
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Command -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -622,6 +636,40 @@
                             <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
+                    &nbsp;&nbsp;
+                    <!-- Disable Command -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">disable [command name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Disables a bot command.
+                            <br/><br/>Disable the "talk" command - ie. !settings disable talk
+                            <br/><br/>Known extra commands:
+                            <ul>
+                                <li>ping</li>
+                                <li>talk</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Enable Command -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">enable [command name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Enables a bot command.
+                            <br/><br/>Enable the "ping" command - ie. !settings enable ping
+                            <br/><br/>Known extra commands:
+                            <ul>
+                                <li>ping</li>
+                                <li>talk</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div> 
                     &nbsp;&nbsp;
                     <!-- Grant -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
@@ -696,6 +744,19 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Join Channel -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">join_channel [channel|off]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Set where the user joined message will show.
+                            <br/><br/>Show in main channel - ie. !settings join_channel #main
+                            <br/>Turn off the user joined message - ie. !settings join_channel off
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>                    
+                    &nbsp;&nbsp;
                     <!-- Leave -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -709,6 +770,50 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Leave Channel -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">leave_channel [channel|off]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Set where the user left message will show.
+                            <br/><br/>Show in main channel - ie. !settings leave_channel #main
+                            <br/>Turn off the user left message - ie. !settings leave_channel off
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Log Channel  -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">logs [channel]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the logging channel.
+                            <br/><br/>Set the log channel to "logs" - ie. !settings logs #logs
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div> 
+                    &nbsp;&nbsp;
+                    <!-- Log Level -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">loglevel [level]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the logging level.
+                            <br/><br/>ie. !settings loglevel 2
+                            <br/><br/>Log levels:
+                            <ul>
+                                <li>0 - No logging.</li>
+                                <li>1 - Bot commands only</li>
+                                <li>2 - Chat and bot commands</li>
+                            </ul>
+                            <b>Note: The default log level is 1.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Muted Role -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -718,6 +823,19 @@
                             Sets the muted role, which disallows users from sending messages.
                             <br/><br/>ie. !settings muted_role Muted
                             <br/><b>Note: The role must be configured for each channel. Use the createmute command to automatically set it up.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Prefix -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">prefix [command area] [prefix]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the prefix of the bot.
+                            <br/><br/>Set the main bot system prefix to ! - ie. !settings prefix main !
+                            <br/>Set the galaxy game bot system prefix to $ - ie. galaxy simulator:simulator:$
                             <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
