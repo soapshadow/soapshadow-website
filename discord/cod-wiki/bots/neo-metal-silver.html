@@ -44,7 +44,7 @@
                 <a href="#chat-log-cmds" class="mdl-layout__tab">Chat Log Cmds</a>
                 <a href="#advanced-cmds" class="mdl-layout__tab">Advanced Cmds</a>
                 <a href="#backup" class="mdl-layout__tab">Backup</a>
-                <a href="#spacer" class="mdl-layout__tab" style="visibility: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <div style="visibility: hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
             </div>
         </header>
         <div class="layout-drawer mdl-layout__drawer">
@@ -405,7 +405,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Bans a user.
                             <br/><br/>ie. !ban @Tyconson67 too many images.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -418,7 +418,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Kicks a user from the server. It also sends them a message with the reason.
                             <br/><br/>ie. !kick @HassieSwift621 Changing Scoots nick.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -435,7 +435,7 @@
                             <br/><br/>Mute a user for one day - ie. !mute @Anti 1d; discussing Overwatch.
                             <br/><b>Note: The semi-colon ; must be included. It is used to separate the time length from the reason.</b>
                             <br/><br/>Time lengths: seconds = s, minutes = m, hour = h, day = d.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -447,10 +447,10 @@
                         </div>
                         <div class="card-font mdl-card__supporting-text">
                             Deletes the specified number of messages. The maximum is 100 per command.
-                            <br/><br/>Delete 5 messages from a single user - !prune 99 @T-Marey
+                            <br/><br/>Delete 99 messages from a single user - !prune 99 @T-Marey
                             <br/><br/>Delete 15 messages from multiple users - !prune 15 @HassieSwift621 @T-Marey
                             <br/><b>Note: There is no separator to separate the list of users.</b>
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -463,7 +463,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Bans a user and immediately bans. In this process, all messages sent in the last 24 hours by the user are deleted.
                             <br/><br/>ie. !softban @Callofduty4 being a feesh.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -478,7 +478,7 @@
                             <br/><br/>ie. !tempban @tib 1h; spam.
                             <br/><b>Note: The semi-colon ; must be included. It is used to separate the time length from the reason.</b>
                             <br/><br/>Time lengths: seconds = s, minutes = m, hour = h, day = d.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -491,7 +491,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Un-mutes a user.
                             <br/><br/>ie. !unmute @tib agreed to stop spamming.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -504,7 +504,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Warns a user with the specified reason.
                             <br/><br/>ie. !warn @YeIST being yellow.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -523,7 +523,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Shows the moderation log for a user, ie. all bans, kicks etc.
                             <br/><br/>ie. !moderation @Amirakun
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -536,7 +536,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Shows all the moderator actions that a mod has performed, ie. all bans issued, kicks issued etc.
                             <br/><br/>ie. !moderator @FireBird-
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -549,7 +549,7 @@
                         <div class="card-font mdl-card__supporting-text">
                             Changes the reason for a moderation, ie. a ban, kick etc.
                             <br/><br/>ie. !reason 12 Changing Scoots nick twice.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -560,9 +560,9 @@
                             <h2 class="card-font mdl-card__title-text">resolve [case no]</h2>
                         </div>
                         <div class="card-font mdl-card__supporting-text">
-                            Removes a moderation log from a user, ie. accidental kick.
-                            <br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
-                            <span style="color:#66AAFF;">b'crats</span>.
+                            Removes a moderation log from a user.
+                            <br/><br/>ie. !resolve 3
+                            <br/><br/>Command restriction: <span style="color:#32CD32;">sysops</span>, <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
                     &nbsp;&nbsp;
@@ -586,7 +586,7 @@
                                 <li>--page:# - Choose search results page number</li>
                             </ul>
                             <br/><b>Note: No separator is used to separate each search parameter. Instead a double dash -- is used to declare each parameter.</b>
-                            <br/><br/><br/>Command restriction: <span style="color:#DDAA00;">mods</span>, <span style="color:#32CD32;">sysops</span>,
+                            <br/><br/><br/>Command restriction: <span style="color:#E52E0A;">mods</span>, <span style="color:#32CD32;">sysops</span>,
                             <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
@@ -611,6 +611,18 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;
+                    <!-- Create Mute -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">createmute [role name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Creates a mute role and automatically configures it for each channel.
+                            <br/><br/>Create a muted role named "Muted" - ie. !settings createmute Muted
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
                     <!-- Grant -->
                     <div class="card-text mdl-card mdl-shadow--6dp">
                         <div class="mdl-card__title">
@@ -619,8 +631,26 @@
                         <div class="card-font mdl-card__supporting-text">
                             Grants a role a permission.
                             <br/><br/>ie. !grant "b'crats" prune
-                            <br/><br/><b>Note: The role must be set grantable via the grantable command.</b>
-                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                            <br/><br/>Grantable permissions:
+                            <br><ul>
+                                <li>administrator - Gives the role access to all parts of the bot.</li>
+                                <li>ban - Allows the role to ban a user with the ban command.</li>
+                                <li>changemodlogs - Allows the role to modify the moderation logs, ie. changing the ban reason.</li>
+                                <li>grant - Allows the role to grant/revoke these permissions to roles.</li>
+                                <li>kick - Allows the role to kick a user with the kick command.</li>
+                                <li>logs - Gives the role to view the chat logs.</li>
+                                <li>modlogs - Gives the role access to the moderation logs.</li>
+                                <li>mute - Allows the role to mute a user with the mute command.</li>
+                                <li>override - Allows the role to override specific channel permissions, 
+                                    ie. using bot commands in a channel where the bot is disabled.
+                                <li>prune - Allows the role to delete messages with the prune command.</li>
+                                <li>resolve - Allows the role to remove a moderation log.</li>
+                                <li>roleadd - Allows the role to add a role to a user.</li>
+                                <li>roleremove - Allows the role to remove a role from a user.</li>
+                                <li>unmute - Allows the role to unmute a user with the un-mute command.</li>
+                                <li>warn - Allows the role to warn a user with the warn command.</li>
+                            </ul>
+                            <br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
                     &nbsp;&nbsp;
@@ -633,25 +663,62 @@
                             Set a role grantable or un-grantable.
                             <br/><br/>Set a role grantable - ie. !grantable "b'crats" yes
                             <br/>Set a role un-grantable - ie. !grantable "mods" no
-                            <br/><br/>Grantable commands:
-                            <br><ul>
-                                <li>administrator - Gives the role access to all parts of the bot.</li>
-                                <li>ban - Allows the role to ban a user.</li>
-                                <li>changemodlogs - Allows the role to modify the moderation logs, ie. changing the ban reason.</li>
-                                <li>grant - Allows the role to grant/revoke these permissions to roles.</li>
-                                <li>kick - Allows the role to kick a user.</li>
-                                <li>logs - Gives the role to view the chat logs.</li>
-                                <li>mute - Allows the role to mute a user.</li>
-                                <li>override - Allows the role to override specific channel permissions, 
-                                    ie. using bot commands in a channel where the bot is disabled.
-                                <li>prune - Allows the role to delete messages.</li>
-                                <li>resolve - Allows the role to remove a moderation log.</li>
-                                <li>roleadd - Allows the role to add a role to a user.</li>
-                                <li>roleremove - Allows the role to remove a role from a user.</li>
-                                <li>unmute - Allows the role to unmute a user.</li>
-                                <li>warn - Allows the role to warn a user.</li>
-                            </ul>
-                            <br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Ignore -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">ignore [parameter] [channel(s)]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Manage channels with the bot commands ignored.
+                            <br/><br/>Set channel "main" to ignore bot commands - ie. !settings ignore add #main
+                            <br/><br/>Set channel "main" and "wiki-discussion" to ignore bot commands and overwrite previous settings - ie. !settings ignore set #main #wiki-discussion
+                            <br/><br/>Remove channel "main" from ignoring bot commands - ie. !settings ignore remove main
+                            <br/><br/>List channels where bot commands are ignored - ie. !settings ignore list
+                            <br/><br/><b>Note: There is no separator used to separate the list of channels.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Join -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">join [message]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the join message for a new user.
+                            <br/><br/>ie. !settings join Welcome {user} to the official Call of Duty Wiki Discord server. We now have {members} in our server.
+                            <br/><b/>Note: {user} automatically subsitutes the username. {members} automatically subsitutes the total number of users in the server.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Leave -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">leave [message]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the leave message after a user leaves.
+                            <br/><br/>ie. !settings leave {user} has left the server. We now have {members} in our server.
+                            <br/><b/>Note: {user} automatically subsitutes the username. {members} automatically subsitutes the total number of users in the server.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;
+                    <!-- Muted Role -->
+                    <div class="card-text mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title">
+                            <h2 class="card-font mdl-card__title-text">muted_role [role name]</h2>
+                        </div>
+                        <div class="card-font mdl-card__supporting-text">
+                            Sets the muted role, which disallows users from sending messages.
+                            <br/><br/>ie. !settings muted_role Muted
+                            <br/><b>Note: The role must be configured for each channel. Use the createmute command to automatically set it up.</b>
+                            <br/><br/>Command restriction: <span style="color:#66AAFF;">b'crats</span>.
                         </div>
                     </div>
 
@@ -663,12 +730,7 @@
 
                 </div>
             </section>
-
-            <section class="mdl-layout__tab-panel" id="spacer">
-                <div class="layout-cod-discord-bot-cmds page-content" style="margin: 16px">
-
-                </div>
-            </section>
+            
         </main>
 
     </div>
